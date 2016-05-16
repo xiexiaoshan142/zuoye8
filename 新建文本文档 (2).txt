@@ -1,0 +1,63 @@
+package com.cvicse.test.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TriangleTest {
+
+    @Before
+    public void setUp() throws Exception {
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void test() {
+        fail("Not yet implemented");
+    }
+     @Test
+     public void testlsTringle1(){
+         Triangle t=new Triangle(3,4,5);
+         assertEquals(t.getType(t),"非等边三角形");
+     }
+     @1Test
+     public void testlsTringle2(){
+         Triangle t=new Triangle(0,4,5);
+         assertEquals(t.getType(t),"不是三角形");
+     }
+     @Test
+     public void testlsTringle3(){
+         Triangle t=new Triangle(3,3,3);
+         assertEquals(t.getType(t),"等边三角形");
+     }
+     @Test
+     public void testlsTringle4(){
+         Triangle t=new Triangle(-3,-4,-5);
+         assertEquals(t.getType(t),"不是三角形");
+     }
+     @Test
+     public void testlsTringle5(){
+         Triangle t=new Triangle(3,4,5);
+         assertEquals(t.getType(t),"不是三角形");
+     }
+    @Test
+     public void testlsTringle6(){
+         Triangle t=new Triangle(6,4,6);
+         assertEquals(t.getType(t),"等腰三角形");
+     }
+     @Test
+     public void testlsTringle7(){
+         Triangle t=new Triangle(-1,-2,-2);
+         assertEquals(t.getType(t),"不是三角形");
+     }
+     @Test
+     public void testlsTringle8(){
+         Triangle t=new Triangle(4,4,5);
+         assertEquals(t.getType(t),"等腰三角形");
+     }
+}
